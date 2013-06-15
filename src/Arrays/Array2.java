@@ -29,7 +29,7 @@ public class Array2 {
        numero[8] = s.nextInt();
        numero[9] = s.nextInt();
    
-       for(int i=0;i<numero.length -1;i++){
+       for(int i=0;i<numero.length;i++){
           if (numero[i] > maior) {
              maior = numero[i];
           }
