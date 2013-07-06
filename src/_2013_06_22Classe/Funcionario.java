@@ -28,14 +28,14 @@ public class Funcionario {
     public void mostra()
     {
         System.out.println("");
-        System.out.println("Dados do Funcionário");
+        System.out.println("   Dados do Funcionário");
         System.out.println("   nome: "+this.nome);
         System.out.println("   departamento: "+this.departamento);
         System.out.println("   salario: "+this.salario);
         System.out.println("   dataEntrada: "+this.dataEntrada);
         System.out.println("   rg: "+this.rg);
         System.out.println("   estaNaEmpresa: "+this.estaNaEmpresa);
-        System.out.println("***************************************");
+        System.out.println("   ***************************************");
     }
             
             

@@ -21,17 +21,39 @@ public class Empresa {
     
     void adiciona(Funcionario f)
     {
+        /*
        for(int i=0;i<empregados.length;i++){
           if (empregados[i] == null ) {
               empregados[i] = f;
               break;
           };
           System.out.println("   contador:"+i);
+       }*/
+       
+       Integer pos;
+       pos = posicaoLivre(empregados);
+               
+       if ( pos >= 0) {
+          empregados[pos] = f;
+       }else{
+         System.out.println("ERRO AO ADICIONAR O FUNCIONÁRRIO NA POSICAO: "+pos);
+         f.mostra();
        }
-        
-        
-       //empregados[0] = f; 
+       
     }
+    
+    
+    Integer posicaoLivre( Funcionario[] emp)
+    {
+      for(int i=0;i<emp.length;i++){
+          if (emp[i] == null ) {
+              return i;
+          };
+       }  
+      System.out.println("ARRAY CHEIO:");
+      return -1;
+    }
+    
     
     void mostraEmpresa()
     {
